@@ -1,0 +1,99 @@
+<div class="app-container">
+  <header class="app-header">
+    <div class="header-content">
+      <h1 class="app-title">Micro Frontend Shell</h1>
+      <nav class="nav-menu">
+        <a routerLink="/home" routerLinkActive="active" class="nav-link">Home</a>
+        <a routerLink="/profile" routerLinkActive="active" class="nav-link">Profile</a>
+        <a routerLink="/cart" routerLinkActive="active" class="nav-link">Cart</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="main-content">
+    <router-outlet />
+  </main>
+  
+  <footer class="app-footer">
+    <p>&copy; 2024 Micro Frontend Demo. Built with Angular.</p>
+  </footer>
+</div>
+
+<style>
+  .app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-header {
+    background: #007bff;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .app-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+  }
+  
+  .nav-link.active {
+    background-color: rgba(255,255,255,0.2);
+    font-weight: 600;
+  }
+  
+  .main-content {
+    flex: 1;
+    background: #f8f9fa;
+  }
+  
+  .app-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .app-footer p {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .nav-menu {
+      gap: 1rem;
+    }
+  }
+</style>
