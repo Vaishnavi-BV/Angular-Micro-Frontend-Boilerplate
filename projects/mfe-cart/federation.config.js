@@ -5,7 +5,7 @@ module.exports = withNativeFederation({
   name: 'mfe-cart',
 
   exposes: {
-    './App': './projects/mfe-cart/src/app/app.component.ts',
+    './App': './projects/mfe-cart/src/app/app.component.ts', 
   },
 
   shared: {
