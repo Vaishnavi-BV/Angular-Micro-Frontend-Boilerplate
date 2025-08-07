@@ -12,7 +12,7 @@ export class SidebarComponent {
   @Input() collapsed = false;
 
   menuItems = [
-    { icon: './images/Dashboard Icon.svg', label: 'Dashboard', path: '/dashboard' },
-    { icon: './images/Providers Icon.svg', label: 'Project', path: '/project' },
+    { icon: './images/Dashboard Icon.svg', label: 'Dashboard', path: '/profile' },
+    { icon: './images/Providers Icon.svg', label: 'Project', path: '/cart' },
   ];
 }
